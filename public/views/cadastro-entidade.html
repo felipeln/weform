@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova Entidade - WeForm</title>
+  </head>
+
+<!-- TODO: estilizar index, terminar estrutura html do cadastro-entidade e criar mais 2 paginas html -->
+<!-- TODO: implementar banco de dados, mongodb com node para manter as entidades,campos de coleta,novos cadastros etc. -->
+<!-- TODO: implementar campo endereço na entidade e utilizar api de CEP-->
+
+  <body>
+    <main>
+      <div class="container-left">
+        <img src="" alt="weform logo" />
+      </div>
+      <div class="container-right">
+        <form action="">
+          <fieldset>
+            <legend><span class="arrow"></span>Nova Entidade</legend>
+
+            <div class="form-field">
+              <label for="name">Name:</label
+              ><input aria-label="name" type="text" name="name" />
+            </div>
+            <div class="form-field">
+              <label for="campo-atuacao">Campo de atuação</label
+              >
+              <select name="campo-atuacao" id="campo-atuacao">
+                <option value=""></option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="ponto-coleta">pontos de ponto-coleta</label
+              ><input
+                type="text"
+                name="ponto-coleta"
+                aria-label="ponto de coleta"
+              />
+            </div>
+          </fieldset>
+
+          <div class="btn novo-cadastro"></div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
