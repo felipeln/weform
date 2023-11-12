@@ -13,10 +13,12 @@ font-family: 'Roboto', sans-serif; */
 
 main{
   padding: 40px 60px;
-  display: flex;
-  flex-direction: column;
-  gap: 60px 0;
+  display: grid;
 
+  grid-template-columns: 1fr;
+  gap: 30px;
+
+  height: 100vh;
   justify-content: center;
   align-items: center;
   
@@ -30,9 +32,12 @@ main{
   gap: 40px;
 }
 .container-left img{
-  width: 300px;
+  max-width: 409px;
+  max-height: 307px;
+  width: 100%;
   height: auto;
   flex-shrink: 0; 
+ 
 }
 
 h1.logo{
@@ -70,10 +75,16 @@ h1.logo{
   line-height: normal;
 }
 .btn{
-  width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 489px;
+  width: 100%;
   min-height: 55px;
-  flex-shrink: 0; 
   cursor: pointer;
+
+  text-decoration: none;
 }
 .btn.cadastro{
   border-radius: 12px;
@@ -103,7 +114,9 @@ h1.logo{
 }
 
 .container-right p{
-  width: 280px;
+  max-width: 488px;
+  width: 100%;
+
   color: #000;
   text-align: center;
   font-family: Poppins;
@@ -115,7 +128,8 @@ h1.logo{
   margin-top: 20px;
 }
 a.registra-campo{
-  width: 488px;
+  max-width: 488px;
+  width: 100%;
 
   color: #000;
   text-align: center;
@@ -128,98 +142,10 @@ a.registra-campo{
   text-decoration-line: underline;
 }
 
+/* Tablets and Small Desktops: */
 
-/* ! Mobile Devices (Landscape) and Small Tablets: */
-
-@media screen and (min-width: 481px) and (max-width: 767px) {
-  .container-left img{
-    width: 340px;
-    height: auto;
-    flex-shrink: 0; 
-  }
-
-  .btn {
-    width: 340px;
-    height: 55px;
-  }
-  .container-right h2 {
-
-    font-size: 30px;
-  }
-  .btn.cadastro, .btn.ver-entidades{
-    font-size: 20px;
-  }
-  .container-right p{
-    width: 340px;
-  }
-}
-
-
-/* ! Desktops and Laptops: */
-
-@media screen and (min-width: 800px) and (max-width: 1200px){
+@media screen and (min-width: 768px) {
   main{
-    padding: 40px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    height: 100vh;
-    
-  }
-  .container-left img{
-    width: 300px;
-    height: auto;
-    flex-shrink: 0; 
-  }
-
-  .btn {
-    width: 320px;
-    height: 55px;
-  }
-  .container-right h2 {
-
-    font-size: 30px;
-  }
-  .btn.cadastro, .btn.ver-entidades{
-    font-size: 20px;
-  }
-  .container-right p{
-    width: 320px;
-  }
-
-
-}
-
-/* ! Large Desktops and High-Resolution Displays: */
-
-@media screen and (min-width: 1201px) {
-  main{
-    flex-direction: row;
-    gap: 120px;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-
-  }
-  
-  .container-left img{
-    width: 409px;
-    height: 307px;
-    flex-shrink: 0; 
-  }
-
-  .btn{
-    width: 489px;
-    height: 55px;
-  }
-  .container-right h2 {
-
-    font-size: 36px;
-  }
-  .btn.cadastro, .btn.ver-entidades{
-    font-size: 24px;
-  }
-  .container-right p{
-    width: 488px;
+    grid-template-columns: 1fr 1fr;
   }
 }
