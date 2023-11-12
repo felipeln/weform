@@ -1,0 +1,225 @@
+:root{
+  --primary-red: #FF5678; 
+  --second-blue: #35E6E9;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+main{
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px 0;
+
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.container-left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 40px;
+}
+.container-left img{
+  width: 300px;
+  height: auto;
+  flex-shrink: 0; 
+}
+
+h1.logo{
+  font-family: 'Roboto', sans-serif;
+}
+.container-left h1{
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal; 
+}
+
+.red{
+  color: var(--primary-red);
+  margin-right: 10px;
+}
+
+.container-right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: #FFF;
+  padding: 40px 60px;
+  gap: 40px;
+}
+
+.container-right h2{
+  color: #000;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.btn{
+  width: 280px;
+  min-height: 55px;
+  flex-shrink: 0; 
+  cursor: pointer;
+}
+.btn.cadastro{
+  border-radius: 12px;
+  border: 2px solid #C0EBF4;
+  background: var(--second-blue);
+
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.btn.ver-entidades{
+  border-radius: 12px;
+  border: 2px solid #C0EBF4;
+  background: var(--primary-red);
+
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.container-right p{
+  width: 280px;
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  margin-top: 20px;
+}
+a.registra-campo{
+  width: 488px;
+
+  color: #000;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+
+/* ! Mobile Devices (Landscape) and Small Tablets: */
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .container-left img{
+    width: 340px;
+    height: auto;
+    flex-shrink: 0; 
+  }
+
+  .btn {
+    width: 340px;
+    height: 55px;
+  }
+  .container-right h2 {
+
+    font-size: 30px;
+  }
+  .btn.cadastro, .btn.ver-entidades{
+    font-size: 20px;
+  }
+  .container-right p{
+    width: 340px;
+  }
+}
+
+
+/* ! Desktops and Laptops: */
+
+@media screen and (min-width: 800px) and (max-width: 1200px){
+  main{
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 100vh;
+    
+  }
+  .container-left img{
+    width: 300px;
+    height: auto;
+    flex-shrink: 0; 
+  }
+
+  .btn {
+    width: 320px;
+    height: 55px;
+  }
+  .container-right h2 {
+
+    font-size: 30px;
+  }
+  .btn.cadastro, .btn.ver-entidades{
+    font-size: 20px;
+  }
+  .container-right p{
+    width: 320px;
+  }
+
+
+}
+
+/* ! Large Desktops and High-Resolution Displays: */
+
+@media screen and (min-width: 1201px) {
+  main{
+    flex-direction: row;
+    gap: 120px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .container-left img{
+    width: 409px;
+    height: 307px;
+    flex-shrink: 0; 
+  }
+
+  .btn{
+    width: 489px;
+    height: 55px;
+  }
+  .container-right h2 {
+
+    font-size: 36px;
+  }
+  .btn.cadastro, .btn.ver-entidades{
+    font-size: 24px;
+  }
+  .container-right p{
+    width: 488px;
+  }
+}

@@ -10,15 +10,18 @@
 <!-- TODO: implementar banco de dados, mongodb com node para manter as entidades,campos de coleta,novos cadastros etc. -->
 <!-- TODO: implementar campo endereço na entidade e utilizar api de CEP-->
 
+<!-- design link: https://www.figma.com/file/rQRDro1gtuJnwZmKfpwbak/We-Form-(Copy)?node-id=0%3A1&mode=dev -->
+
   <body>
     <main>
       <div class="container-left">
         <img src="" alt="weform logo" />
+        <h1 class="logo"><span class="red">We</span>Form</h1>
       </div>
       <div class="container-right">
         <form action="">
           <fieldset>
-            <legend><span class="arrow"></span>Nova Entidade</legend>
+            <legend><span class="arrow"></span>Nova <span class="red">Entidade</span></legend>
 
             <div class="form-field">
               <label for="name">Name:</label
@@ -28,7 +31,9 @@
               <label for="campo-atuacao">Campo de atuação</label
               >
               <select name="campo-atuacao" id="campo-atuacao">
-                <option value=""></option>
+                <option value="ponto um">ponto um</option>
+                <option value="ponto dois">ponto dois</option>
+                <option value="ponto tres">ponto tres</option>
               </select>
             </div>
             <div class="form-field">
@@ -37,11 +42,11 @@
                 type="text"
                 name="ponto-coleta"
                 aria-label="ponto de coleta"
-              />
+              />  
             </div>
           </fieldset>
 
-          <div class="btn novo-cadastro"></div>
+          <button class="btn novo-cadastro">Cadastro</button>
         </form>
       </div>
     </main>
