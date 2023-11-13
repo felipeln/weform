@@ -3,6 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/public/styles/main.css">
+    <link rel="stylesheet" href="/public/styles/cadastro-endidade.css">
+
+
+
     <title>Nova Entidade - WeForm</title>
   </head>
 
@@ -15,16 +24,16 @@
   <body>
     <main>
       <div class="container-left">
-        <img src="" alt="weform logo" />
+        <img src="/public/img/dog-illustration.png" alt="weform logo" />
         <h1 class="logo"><span class="red">We</span>Form</h1>
       </div>
       <div class="container-right">
         <form action="">
           <fieldset>
-            <legend><span class="arrow"></span>Nova <span class="red">Entidade</span></legend>
+            <legend class="sub-titulo"><span class="arrow"></span>Nova<span class="red"> Entidade</span></legend>
 
             <div class="form-field">
-              <label for="name">Name:</label
+              <label for="name">Nome</label
               ><input aria-label="name" type="text" name="name" />
             </div>
             <div class="form-field">
@@ -37,16 +46,20 @@
               </select>
             </div>
             <div class="form-field">
-              <label for="ponto-coleta">pontos de ponto-coleta</label
-              ><input
+              <label for="ponto-coleta">pontos de ponto coleta</label
+              >
+                <input
                 type="text"
                 name="ponto-coleta"
                 aria-label="ponto de coleta"
               />  
+              <a id="add-ponto-coleta-btn" aria-label="adicionar ponto de coleta button" href="#" class="btn">
+                <img src="/public/img/circle.svg" alt="">
+              </a>
             </div>
           </fieldset>
 
-          <button class="btn novo-cadastro">Cadastro</button>
+          <a class="btn cadastro">Cadastrar</a>
         </form>
       </div>
     </main>
