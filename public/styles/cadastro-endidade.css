@@ -16,7 +16,7 @@ fieldset{
   width: 40px;
   height: 40px;
   margin-left: -10px;
-  background: url('/public/img/arrow-left.svg') ;
+  background: url('../img/arrow-left.svg') ;
   color: black;
 }
 
@@ -62,7 +62,7 @@ fieldset{
 }
 .form-field select{
   appearance: none;
-  background: url('/public/img/down-arrow.svg') no-repeat right center; /
+  background: url('../img/down-arrow.svg') no-repeat right center; /
 }
 
 

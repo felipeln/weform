@@ -48,7 +48,7 @@ h1.logo{
   height: 40px;
   margin-left: -50px;
 
-  background: url('/public/img/arrow-left.svg') ;
+  background: url('../img/arrow-left.svg') ;
   color: black;
 }
 #entidades-list {
