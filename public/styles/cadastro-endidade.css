@@ -77,3 +77,25 @@ fieldset{
   cursor: pointer;
   text-decoration: none;
 }
+
+
+p.ou{
+  color: #000;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal; 
+}
+
+p .red{
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mg-left{
+  margin-left: 5px;
+}

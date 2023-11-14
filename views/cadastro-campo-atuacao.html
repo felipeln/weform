@@ -7,6 +7,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/public/styles/main.css">
+  <link rel="stylesheet" href="/public/styles/cadastro-endidade.css">
+
   <title>Cadastro Campo de Atuação - WeForm</title>
 </head>
 <body>
@@ -14,25 +18,72 @@
 
   <main>
     <div class="container-left">
-      <img src="" alt="weform logo">
+      <img src="/public/img/dog-illustration.png" alt="weform logo">
       <h1 class="logo"><span class="red">We</span>Form</h1>
     </div>
     <div class="container-right">
       <form action="#">
         <fieldset>
-          <legend><span class="arrow"></span>Campo de <span class="red">Atuação</span></legend>
-
+          <legend class="sub-titulo"><span class="arrow"></span>Campo de <span class="red mg-left">Atuação</span></legend>
           <div class="form-field">
-            <label for="pesquisar-atuacao">Pesquisar Atuação:</label
-            ><input aria-label="pesquisar-atuacao" type="text" name="pesquisar-atuacao" />
+            <label for="pesquisar-atuacao">Campo de atuação</label
+            >
+            <select name="pesquisar-atuacao" id="pesquisar-atuacao">
+              <option value="ponto um">ponto um</option>
+              <option value="ponto dois">ponto dois</option>
+              <option value="ponto tres">ponto tres</option>
+            </select>
+            <span class="down-arrow"></span>
           </div>
+          <p class="ou">ou <br> 
+            <span class="red">Cadastre novo campo de atuação</span></p>
           <div class="form-field">
             <label for="campo-atuacao">Campo de atuação:</label
             ><input aria-label="campo-atuacao" type="text" name="campo-atuacao" />
           </div>
+        </fieldset>
+        <a class="btn cadastro">Cadastrar</a>
+      </form>
     </div>
   </main>
 
+
+  <!-- <div class="container-right">
+    <form action="">
+      <fieldset>
+        <legend class="sub-titulo"><span class="arrow"></span>Nova<span class="red"> Entidade</span></legend>
+
+        <div class="form-field">
+          <label for="name">Nome</label
+          ><input aria-label="name" type="text" name="name" />
+        </div>
+        <div class="form-field">
+          <label for="campo-atuacao">Campo de atuação</label
+          >
+          <select name="campo-atuacao" id="campo-atuacao">
+            <option value="ponto um">ponto um</option>
+            <option value="ponto dois">ponto dois</option>
+            <option value="ponto tres">ponto tres</option>
+          </select>
+          <span class="down-arrow"></span>
+        </div>
+        <div class="form-field">
+          <label for="ponto-coleta">pontos de ponto coleta</label
+          >
+            <input
+            type="text"
+            name="ponto-coleta"
+            aria-label="ponto de coleta"
+          />  
+          <a id="add-ponto-coleta-btn" aria-label="adicionar ponto de coleta button" href="#" class="btn">
+            <img src="/public/img/circle.svg" alt="">
+          </a>
+        </div>
+      </fieldset>
+
+      <a class="btn cadastro">Cadastrar</a>
+    </form>
+  </div> -->
 
 </body>
 </html>
